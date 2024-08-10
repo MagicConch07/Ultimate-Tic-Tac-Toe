@@ -1,0 +1,21 @@
+{
+	"name": "tictactoeserver",
+	"version": "1.0.0",
+	"main": "Server.js",
+	"type": "module",
+	"scripts": {
+		"server": "nodemon \"./src/Server.js\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"express": "^4.19.2",
+		"jsonwebtoken": "^9.0.2",
+		"mysql2": "^3.11.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.4"
+	}
+}
