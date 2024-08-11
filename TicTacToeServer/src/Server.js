@@ -1,12 +1,12 @@
 import express from "express";
+import { UserRouter } from "./Router/UserRouter.js";
 
 const app = express();
 
-app.get("/test", (req, res) => {
-	res.json({ msg: "Hello Unity!" });
-});
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.get("/insert", (req, res) => {});
+app.use(UserRouter());
 
 app.listen(4500, () => {
 	console.log(
