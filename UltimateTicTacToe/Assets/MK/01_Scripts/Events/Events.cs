@@ -14,12 +14,12 @@ namespace Mk_JWT
 
     public static class Events
     {
-        public static RegisterNetworkEvnet RegisterNetworkEvnet = new RegisterNetworkEvnet();
+        public static RegisterNetworkEvent RegisterNetworkEvent = new RegisterNetworkEvent();
         public static PostResultEvent PostResultEvent = new PostResultEvent();
         public static LoginNetworkEvent LoginNetworkEvent = new LoginNetworkEvent();
     }
 
-    public class RegisterNetworkEvnet : NetworkEvent, IWWWFormable
+    public class RegisterNetworkEvent : NetworkEvent, IWWWFormable
     {
         public string email;
         public string name;

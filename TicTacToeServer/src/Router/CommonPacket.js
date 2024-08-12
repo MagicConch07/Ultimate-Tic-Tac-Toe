@@ -5,5 +5,5 @@ export const MsgType = {
 
 export const MSG = {
 	type: MsgType.ERROR,
-	body: "",
+	msg: "",
 };
